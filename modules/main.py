@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nSKR मालिक TXT फाइल भेजिये.\n")
+    editable = await m.reply_text("Hi!\n\nतुम पहली फुरसत मे निकलो मेरे मालिक SKR है.\n")
 
 @bot.on_message(filters.command("stop"))
 async def restart_handler(_, m):
