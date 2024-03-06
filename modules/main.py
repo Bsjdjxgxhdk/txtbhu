@@ -48,7 +48,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["ROCK"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text('Hi\n\nTO download a test file send here » ')
+    editable = await m.reply_text('Hi\n\nSKR मालिक TXT file भेजो मैं जिन्दा हूं । » ')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
